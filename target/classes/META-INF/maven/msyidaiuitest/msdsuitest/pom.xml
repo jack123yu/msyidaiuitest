@@ -141,6 +141,11 @@
 					<workingDirectory>target/</workingDirectory>
 					<!-- <forkMode>always</forkMode> -->
 					<reportDirectory>E:/MyWorkspaces/msdstestui/allure-report</reportDirectory>
+					<properties>
+                            <allure.issues.tracker.pattern>http://example.com/%s</allure.issues.tracker.pattern>
+                     </properties>
+                     <reportVersion>2.0.1</reportVersion>
+                     <allureDownloadUrl>https://example.com/allure/allure-2.0.1.zip</allureDownloadUrl>
 				</configuration>
 				
 			</plugin>

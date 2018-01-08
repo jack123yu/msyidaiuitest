@@ -1,16 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 61.431 sec <<< FAILURE! - in TestSuite
-loginusenameflase(com.msyidai.cases.login)  Time elapsed: 5.937 sec  <<< FAILURE!
-java.lang.AssertionError: 账户错误 expected [true] but found [false]
-	at com.msyidai.cases.login.loginusenameflase(login.java:36)
-
-loginusenameflase(com.msyidai.cases.login)  Time elapsed: 5.1 sec  <<< FAILURE!
-java.lang.AssertionError: 账户错误 expected [true] but found [false]
-	at com.msyidai.cases.login.loginusenameflase(login.java:36)
-
-loginusenameflase(com.msyidai.cases.login)  Time elapsed: 5.274 sec  <<< FAILURE!
-java.lang.AssertionError: 账户错误 expected [true] but found [false]
-	at com.msyidai.cases.login.loginusenameflase(login.java:36)
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 3.193 sec <<< FAILURE! - in TestSuite
+setup(com.msyidai.cases.login)  Time elapsed: 2.306 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: D:\chromedriver.exe
 

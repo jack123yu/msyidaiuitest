@@ -4,7 +4,7 @@ import com.msyidai.tool.GetDataTime;
 
 public class BaseConfig {
 	public static String driverType="chrome";
-	public static String driverPath="D:\\chromedriver.exe";
+	public static String driverPath="E:\\peizhichajian\\chromedriver.exe";
 	
 	public static String screenshotsPath="E:\\MyWorkspaces\\msyidai-uitest\\image\\"+GetDataTime.getNowDateTime();
 	public static int retryMaxCount=3;
