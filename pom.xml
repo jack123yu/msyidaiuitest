@@ -142,7 +142,7 @@
 					<!-- <forkMode>always</forkMode> -->
 					<allureDownloadUrl>https://example.com/allure/allure-2.0.1.zip</allureDownloadUrl>
 					 <reportDirectory>${project.build.directory}/site/allure-report</reportDirectory>
-					 <resultsDirectory>${project.build.directory}/site/allure-results</resultsDirectory>
+					 <resultsDirectory>${project.build.directory}/index.html</resultsDirectory>
                      <reportVersion>2.0.1</reportVersion>
                      <failReportIfEmpty>false</failReportIfEmpty>
 					<properties>
@@ -170,11 +170,11 @@
                         <port>8888</port>  
                     </connector>  
                 </connectors>  
-                <webAppSourceDirectory>${basedir}/WebContent</webAppSourceDirectory>  
+               <!--  <webAppSourceDirectory>${basedir}/WebContent</webAppSourceDirectory>   -->
                 <scanIntervalSeconds>10</scanIntervalSeconds>  
-                <webAppConfig>  
+                <!-- <webAppConfig>  
                     <contextPath>/${project.artifactId}</contextPath>  
-                </webAppConfig>  
+                </webAppConfig>   -->
             </configuration>  
         </plugin>  
 		</plugins>
