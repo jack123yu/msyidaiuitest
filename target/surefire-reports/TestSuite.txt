@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 3.193 sec <<< FAILURE! - in TestSuite
-setup(com.msyidai.cases.login)  Time elapsed: 2.306 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\chromedriver.exe
-
