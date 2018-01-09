@@ -20,7 +20,7 @@
 		<aspectj.version>1.8.10</aspectj.version>
 		<allure.issues.tracker.pattern>http://example.com/%s</allure.issues.tracker.pattern>
 	</properties>
-
+     <!-- 三方包配置 -->
 	<dependencies>
 		<dependency>
 			<groupId>mysql</groupId>
@@ -96,6 +96,11 @@
 			<version>${aspectj.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.2</version>
+		</dependency>
+		<dependency>
 			<groupId>ru.yandex.qatools.allure</groupId>
 			<artifactId>allure-testng-adaptor</artifactId>
 			<version>1.5.4</version>
@@ -106,11 +111,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
-			<groupId>io.qameta.allure</groupId>
-			<artifactId>allure-testng</artifactId>
-			<version>2.0-BETA21</version>
-		</dependency>
+		
 	</dependencies>
 	<build>
 
@@ -148,7 +149,7 @@
 					<!-- <forkMode>always</forkMode> -->
 					<reportVersion>2.0.1</reportVersion>
 					<failReportIfEmpty>false</failReportIfEmpty>
-
+                    <workingDirectory>target/</workingDirectory>
 
 
 				</configuration>
