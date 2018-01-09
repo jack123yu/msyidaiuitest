@@ -157,7 +157,7 @@
 				
 				<configuration>
 					<reportDirectory>allure-report</reportDirectory>
-					<resultsDirectory>${project.build.directory}/index.html</resultsDirectory>
+					<resultsDirectory>${project.build.directory}</resultsDirectory>
 				</configuration>
 
 			</plugin>
