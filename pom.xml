@@ -141,7 +141,7 @@
 					</properties>
 					<workingDirectory>target/</workingDirectory>
 					<!-- <forkMode>always</forkMode> -->
-					<reportVersion>2.0.1</reportVersion>
+					<reportVersion>1.5.4</reportVersion>
 					<failReportIfEmpty>false</failReportIfEmpty>
 
 
