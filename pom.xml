@@ -163,12 +163,8 @@
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<version>7.6.17.v20150415</version>
-				<configuration>
-					<webAppSourceDirectory>${project.build.directory}/site/allure-maven-plugin</webAppSourceDirectory>
-					<stopKey>stop</stopKey>
-					<stopPort>1234</stopPort>
-				</configuration>
+				<version>8.1.16.v20140903</version>
+				
 			</plugin>
 		</plugins>
 		<defaultGoal>compile</defaultGoal>
