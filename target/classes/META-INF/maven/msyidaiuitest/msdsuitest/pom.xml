@@ -141,9 +141,6 @@
 					</properties>
 					<workingDirectory>target/</workingDirectory>
 					<!-- <forkMode>always</forkMode> -->
-
-
-					<resultsDirectory>${project.build.directory}/index.html</resultsDirectory>
 					<reportVersion>2.0.1</reportVersion>
 					<failReportIfEmpty>false</failReportIfEmpty>
 
@@ -160,7 +157,7 @@
 				
 				<configuration>
 					<reportDirectory>allure-report</reportDirectory>
-				
+					<resultsDirectory>${project.build.directory}/index.html</resultsDirectory>
 				</configuration>
 
 			</plugin>
@@ -171,7 +168,7 @@
 				<configuration>
 					<connectors>
 						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-							<port>8888</port>
+							<port>8585</port>
 						</connector>
 					</connectors>
 					<!-- <webAppSourceDirectory>${basedir}/WebContent</webAppSourceDirectory> -->
@@ -184,7 +181,7 @@
 		<defaultGoal>compile</defaultGoal>
 	</build>
 	<reporting>
-		<excludeDefaults>true</excludeDefaults>
+		<excludeDefaults>flase</excludeDefaults>
 		<plugins>
 			<plugin>
 				<groupId>ru.yandex.qatools.allure</groupId>
