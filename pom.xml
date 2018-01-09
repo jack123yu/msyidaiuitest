@@ -140,12 +140,17 @@
 					</properties>
 					<workingDirectory>target/</workingDirectory>
 					<!-- <forkMode>always</forkMode> -->
-					<reportDirectory>E:/MyWorkspaces/msdstestui/allure-report</reportDirectory>
+					<allureDownloadUrl>https://example.com/allure/allure-2.0.1.zip</allureDownloadUrl>
+					 <reportDirectory>allure-report</reportDirectory>
+					 <resultsDirectory>allure-results</resultsDirectory>
+                     <reportVersion>2.0.1</reportVersion>
+                     <failReportIfEmpty>false</failReportIfEmpty>
 					<properties>
                             <allure.issues.tracker.pattern>http://example.com/%s</allure.issues.tracker.pattern>
                      </properties>
-                     <reportVersion>2.0.1</reportVersion>
-                     <allureDownloadUrl>https://example.com/allure/allure-2.0.1.zip</allureDownloadUrl>
+            
+                     
+
 				</configuration>
 				
 			</plugin>
@@ -158,7 +163,7 @@
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<version>9.2.10.v20150310</version>
+				<version>8.1.16.v20140903</version>
 				<configuration>
 					<webAppSourceDirectory>${project.build.directory}/site/allure-maven-plugin</webAppSourceDirectory>
 					<stopKey>stop</stopKey>
