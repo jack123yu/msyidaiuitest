@@ -142,7 +142,7 @@
 					<!-- <forkMode>always</forkMode> -->
 					<allureDownloadUrl>https://example.com/allure/allure-2.0.1.zip</allureDownloadUrl>
 					 <reportDirectory>${project.build.directory}/site/allure-report</reportDirectory>
-					 <resultsDirectory>${project.build.directory}/index.html</resultsDirectory>
+					 <resultsDirectory>${project.build.directory}</resultsDirectory>
                      <reportVersion>2.0.1</reportVersion>
                      <failReportIfEmpty>false</failReportIfEmpty>
 					<properties>
