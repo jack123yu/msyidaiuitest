@@ -9,11 +9,7 @@
 
 	<name>msdsuitest</name>
 	<url>http://maven.apache.org</url>
-	<parent>
-		<groupId>ru.yandex.qatools.allure</groupId>
-		<artifactId>allure-examples-parent</artifactId>
-		<version>1.0</version>
-	</parent>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- Allure2属性配置 -->
@@ -90,11 +86,7 @@
 			</exclusions>
 		</dependency>
 		<!-- 配置allure三方包 -->
-		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjweaver</artifactId>
-			<version>${aspectj.version}</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-compiler-plugin</artifactId>
@@ -153,7 +145,13 @@
 
 
 				</configuration>
-
+<dependencies>
+<dependency>
+<groupId>org.aspectj</groupId>
+<artifactId>aspectjweaver</artifactId>
+<version>${aspectj.version}</version>
+</dependency>
+</dependencies>
 			</plugin>
 
 			<plugin>
@@ -162,7 +160,7 @@
 				<version>1.5.4</version>
 
 				<configuration>
-					<reportDirectory>allure-report</reportDirectory>
+					<reportDirectory>${project.build.directory}\target\surefire-reports</reportDirectory>
 					<resultsDirectory>${project.build.directory}</resultsDirectory>
 				</configuration>
 
@@ -187,7 +185,7 @@
 		<defaultGoal>compile</defaultGoal>
 	</build>
 	<reporting>
-		<excludeDefaults>flase</excludeDefaults>
+		<excludeDefaults>true</excludeDefaults>
 		<plugins>
 			<plugin>
 				<groupId>ru.yandex.qatools.allure</groupId>
