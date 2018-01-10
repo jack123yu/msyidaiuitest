@@ -40,7 +40,7 @@ public class DriverFactory {
 		    driver=new FirefoxDriver();
 		break;
 		default:
-			System.out.println("ֻ֧�������������chrome��Firefox��Ie");
+			System.out.println("只支持一下浏览器chrome、Firefox、Ie");
 			break;
 		}
 		return driver;
