@@ -37,7 +37,7 @@ public class RepayLoan extends BasePage {
 	
 	
 	
-	public void repayLoan(String loanId ){
+	public BonusReturn repayLoan(String loanId ){
 		
 	    List<String> loanDueDate=new ArrayList<String>();
 	    String sql="UPDATE loan set BorrowBearingEndDate=now() WHERE loanId="+loanId;//���±��ֹϢ��Ϊ��ǰʱ��
@@ -99,7 +99,7 @@ public class RepayLoan extends BasePage {
 	    
 	    
 	    
-	    
+	 return new BonusReturn();   
 	    
 	}
 	

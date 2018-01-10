@@ -15,6 +15,7 @@ public class ShakeAwards extends BasePage{
 	public  void  investShakeAwards(String loanId) {
 		driver.get("http://www.msyidai.com/toPrizePage?loanId="+loanId);
 		getAllButton.click();
+		local.wait(1);
 		sureButtonElement.click();
 		
 		

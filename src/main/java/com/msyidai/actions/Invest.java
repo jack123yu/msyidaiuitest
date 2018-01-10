@@ -35,7 +35,7 @@ public class Invest extends BasePage{
 	private WebElement successElement;
 	
 
-	public  void investLoan(String amount,String loanId,String password) {
+	public  FrontHomePage  investLoan(String amount,String loanId,String password) {
 		
 	    local.to("https://www.msyidai.com/loanDetail?loanId="+loanId);
 	    investAmount.clear();
@@ -66,9 +66,10 @@ public class Invest extends BasePage{
 			FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "investError");
 			
 		}
+		return new FrontHomePage();
 		} 
 		//购买转让标的
-		public void investTransLoan(String loanId,String password){
+		public FrontHomePage investTransLoan(String loanId,String password){
 			String transId=GetLoan.getLoanTransId(loanId);
 			local.to("https://www.msyidai.com/toTransDetailPage?transId="+transId);
 			transLoanInvest.click();
@@ -81,7 +82,7 @@ public class Invest extends BasePage{
 			paypassword.sendKeys(password);
 			agreecheckbox.click();
 			investAmount.click();
-		
+			return new FrontHomePage();
 		} 
 		
 
