@@ -26,7 +26,7 @@ public class ReleaseTransLoan extends TestBase{
 	@DataProvider(name="providerNumbers")
 	public Object[][] providerNumbers() {
 		
-		return new Object[][]{{"ZC_20171115_165535","10000","12","转让"},
+		return new Object[][]{{"ZC_20171213_173100","10000","12","转让"},
 			               
 		};
 	}

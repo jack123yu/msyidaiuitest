@@ -51,13 +51,14 @@ public class TransferLoan extends BasePage{
 					transLoanButton.click();
 					payPassword.sendKeys(paypassword);
 					sendElement.click();
-					if (!successElement.getText().equals("发布成功")) {
+					local.wait(1);
+					if (!successElement.getText().contains("已发布")) {
 						FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "investTrans");
 						local.wait(1);
 						local.pageUp();
 						FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "investTrans");
 						logger.error("标的"+loanId+"变现失败！！请前往目录："+BaseConfig.screenshotsPath+"  下查看");
-						throw new MyException("转让标的发布异常");
+						
 					}
 					
 					logger.info("标的"+loanId+successElement.getText());

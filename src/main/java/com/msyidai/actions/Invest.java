@@ -44,7 +44,7 @@ public class Invest extends BasePage{
 		if (local.IsexistWelement(sendCodeElement)) {
 			local.wait(1);
 			sendCodeElement.click();
-			if(!errorMenage.getText().equals(null)){
+			if(!errorMenage.getText().equals("")){
 				logger.error(errorMenage.getText());
 				FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "investError");
 			}
@@ -53,6 +53,7 @@ public class Invest extends BasePage{
 		}
 		paypassword.clear();
 		paypassword.sendKeys(password);
+		local.wait(1);
 		investButton.click();
 		local.wait(1);
 		String successTitle=successElement.getText();
@@ -63,7 +64,7 @@ public class Invest extends BasePage{
 		}else {
 			logger.error(errorMenage.getText());
 			FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "investError");
-			throw new MyException("投资异常！");
+			
 		}
 		} 
 		//购买转让标的

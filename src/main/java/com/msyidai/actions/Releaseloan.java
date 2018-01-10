@@ -40,6 +40,7 @@ public class Releaseloan extends BasePage {
 		if (local.IsexistWelement(releasePrepare)) {
 			logger.info("标的"+loanId+": 标的成功成功");
 			releasePrepare.click();
+			local.wait(1);
 			/*
 			 * tiString未点击放款准备的弹框提示
 			 */
@@ -49,7 +50,7 @@ public class Releaseloan extends BasePage {
 				release.click();
 				releaseloanSelect.click();
 				releaseOK.click();
-				logger.error("标的"+loanId+"放款成功");
+				logger.info("标的"+loanId+"放款成功");
 			}else {
 				logger.error("标的"+loanId+"放款准备失败");
 				FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "放款失败");
