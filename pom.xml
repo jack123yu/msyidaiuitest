@@ -134,8 +134,10 @@
 							<name>reporter</name>
 							<value>listenReport.Reporter</value>
 						</property>
-						<!-- <property> <name>listener</name> <value>org.uncommons.reportng.HTMLReporter</value> 
-							</property> -->
+						<property> 
+						    <name>listener</name> 
+						    <value>org.uncommons.reportng.HTMLReporter</value> 
+						</property>
 					</properties>
 					<workingDirectory>target/</workingDirectory>
 					<!-- <forkMode>always</forkMode> -->
