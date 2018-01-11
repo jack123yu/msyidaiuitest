@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [易贷自动化测试]">
+  <parameter name="amount" value="5000"/>
+  <parameter name="password1" value="a11111111"/>
+  <parameter name="transType" value="转让"/>
+  <parameter name="password2" value="a11111"/>
+  <parameter name="rate" value="12"/>
+  <parameter name="assetId" value="ZC_20171115_165535"/>
+  <parameter name="usename1" value="18201247562"/>
+  <parameter name="usename3" value="1820147562"/>
+  <parameter name="usename2" value="18201247562"/>
+  <parameter name="password3" value=""/>
+  <listeners>
+    <listener class-name="com.msyidai.utils.Mylistener"/>
+  </listeners>
+  <test name="登陆页面测试(failed)">
     <classes>
-      <class name="com.msyidai.cases.BonusReturnTest">
+      <class name="com.msyidai.cases.login">
         <methods>
-          <include name="bonusReturnTest" invocation-numbers="0"/>
-          <include name="tearDown"/>
+          <include name="loginusenameflase"/>
+          <include name="loginsucces"/>
+          <include name="loginpasswordflase"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.msyidai.cases.BonusReturnTest -->
+      </class> <!-- com.msyidai.cases.login -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- 登陆页面测试(failed) -->
+</suite> <!-- Failed suite [易贷自动化测试] -->

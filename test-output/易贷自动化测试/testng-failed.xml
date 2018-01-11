@@ -18,9 +18,9 @@
     <classes>
       <class name="com.msyidai.cases.login">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginusenameflase" invocation-numbers="0 0 0"/>
-          <include name="loginsucces" invocation-numbers="0 0 0"/>
+          <include name="loginusenameflase"/>
+          <include name="loginsucces"/>
+          <include name="loginpasswordflase"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.msyidai.cases.login -->
