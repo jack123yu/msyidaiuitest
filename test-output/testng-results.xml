@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7028" started-at="2018-01-10T10:59:54Z" finished-at="2018-01-10T11:00:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7028" started-at="2018-01-10T10:59:54Z" finished-at="2018-01-10T11:00:01Z">
+      <class name="com.msyidai.cases.BonusReturnTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.msyidai.cases.BonusReturnTest@122765c5]" name="setup" is-config="true" duration-ms="2524" started-at="2018-01-10T18:59:52Z" finished-at="2018-01-10T18:59:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bonusReturnTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.msyidai.cases.BonusReturnTest@122765c5]" name="bonusReturnTest" duration-ms="6994" started-at="2018-01-10T18:59:54Z" data-provider="providerNumbers" finished-at="2018-01-10T19:00:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ZC_20171213_173100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[转让]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bonusReturnTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.msyidai.cases.BonusReturnTest@122765c5]" name="tearDown" is-config="true" duration-ms="1791" started-at="2018-01-10T19:00:02Z" finished-at="2018-01-10T19:00:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.msyidai.cases.BonusReturnTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
