@@ -120,6 +120,8 @@
 			</exclusions>
 		</dependency>
 		
+		
+			
 	</dependencies>
 	<build>
 
@@ -160,23 +162,14 @@
 					<reportVersion>2.0.1</reportVersion>
 					<failReportIfEmpty>false</failReportIfEmpty>
                     <workingDirectory>target/</workingDirectory>
-
-
-				</configuration>
-
-			</plugin>
-
-			<plugin>
-				<groupId>io.qameta.allure</groupId>
-				<artifactId>allure-maven</artifactId>
-				<version>1.5.4</version>
-
-				<configuration>
-					<reportDirectory>${project.build.directory}\target\surefire-reports</reportDirectory>
+<reportDirectory>${project.build.directory}\target\surefire-reports</reportDirectory>
 					<resultsDirectory>${project.build.directory}</resultsDirectory>
+
 				</configuration>
 
 			</plugin>
+
+		
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
