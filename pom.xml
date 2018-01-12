@@ -89,13 +89,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
-			<groupId>org.uncommons</groupId>
-			<artifactId>reportng</artifactId>
-			<version>1.1.4</version>
-			<scope>test</scope>
-
-		</dependency>
+		
 		<!-- 配置allure三方包 -->
 		<dependency>
 			<groupId>io.qameta.allure</groupId>
@@ -108,11 +102,7 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>ru.yandex.qatools.allure</groupId>
-			<artifactId>allure-maven-plugin</artifactId>
-			<version>2.5</version>
-		</dependency>
+		
 		<dependency>
 
 			<groupId>ru.yandex.qatools.allure</groupId>
