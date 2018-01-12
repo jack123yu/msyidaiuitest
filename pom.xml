@@ -121,6 +121,7 @@
 
 	</dependencies>
 	<build>
+	<echo message="运行testng，开始进行测试工作"/>
 		<defaultGoal>compile</defaultGoal>
 		<plugins>
 
@@ -145,7 +146,7 @@
 					<reportDirectory>${project.build.directory}\target\surefire-reports
 					</reportDirectory>
 					<resultsDirectory>${project.build.directory}</resultsDirectory>
-					<workingDirectory>target/</workingDirectory>
+					
 					<forkMode>always</forkMode>
 				</configuration>
 
