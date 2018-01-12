@@ -121,7 +121,8 @@
 
 	</dependencies>
 	<build>
-	<echo message="运行testng，开始进行测试工作"/>
+	
+	
 		<defaultGoal>compile</defaultGoal>
 		<plugins>
 
