@@ -135,7 +135,7 @@
 					<forkMode>once</forkMode>
 					<argLine>-Dfile.encoding=UTF-8</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>./testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/java/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<!-- 配置allure -->
 					<argLine>
