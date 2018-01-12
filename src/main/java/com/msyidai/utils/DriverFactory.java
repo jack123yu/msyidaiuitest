@@ -1,5 +1,7 @@
 package com.msyidai.utils;
-
+/*
+ * 定义了不同非浏览器
+ */
 import java.io.File;
 
 import org.openqa.selenium.WebDriver;
