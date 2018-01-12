@@ -19,7 +19,7 @@
         
     </parameters>
     
-    <test name="登陆页面测试">
+    <test name="登陆页面测试  ">
         <classes>
             <class name="com.msyidai.cases.login">
                 <methods>
