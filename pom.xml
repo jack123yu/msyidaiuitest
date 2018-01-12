@@ -89,7 +89,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 		<!-- 配置allure三方包 -->
 		<dependency>
 			<groupId>io.qameta.allure</groupId>
@@ -97,12 +97,7 @@
 			<version>2.0-BETA21</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjweaver</artifactId>
-			<version>${aspectj.version}</version>
-		</dependency>
-		
+
 		<dependency>
 
 			<groupId>ru.yandex.qatools.allure</groupId>
@@ -121,8 +116,8 @@
 
 	</dependencies>
 	<build>
-	
-	
+
+
 		<defaultGoal>compile</defaultGoal>
 		<plugins>
 
@@ -135,7 +130,7 @@
 					<forkMode>once</forkMode>
 					<argLine>-Dfile.encoding=UTF-8</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/main/java/testng.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<!-- 配置allure -->
 					<argLine>
@@ -147,11 +142,20 @@
 					<reportDirectory>${project.build.directory}\target\surefire-reports
 					</reportDirectory>
 					<resultsDirectory>${project.build.directory}</resultsDirectory>
-					
+
 					<forkMode>always</forkMode>
 				</configuration>
-
+				<dependencies>
+					<dependency>
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjweaver</artifactId>
+						<version>${aspectj.version}</version>
+					</dependency>
+				</dependencies>
 			</plugin>
+
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
