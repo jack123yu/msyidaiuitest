@@ -26,13 +26,13 @@
 	</test>
 	<test name="个人标的录取测试">
 		<classes>
-			<class name="com.msyidai.cases.personLoanInputTest">
+			<class name="com.msyidai.cases.ersonLoanInputTest">
 			</class>
 		</classes>
 	</test>
 	<test name="出国金融标的录取测试">
 		<classes>
-			<class name="com.msyidai.cases.foreignFinancialLoanInput">
+			<class name="com.msyidai.cases.ForeignFinancialLoanInput">
 			</class>
 		</classes>
 	</test>
