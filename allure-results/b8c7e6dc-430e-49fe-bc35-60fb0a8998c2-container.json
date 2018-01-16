@@ -1,0 +1,1 @@
+{"uuid":"b8c7e6dc-430e-49fe-bc35-60fb0a8998c2","name":"易贷自动化测试","start":1516093315421,"stop":1516093330864,"children":["40fa44fd-047c-41ac-9c31-2b49aff708a3"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","start":1516093315448,"stop":1516093320491}]}
