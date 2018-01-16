@@ -40,6 +40,13 @@ public class GetDataTime {
 			
 			return currentTime;
 		}
+		public static String getCurrentFileTime(){
+			Date date =new Date();
+			SimpleDateFormat simpleDateFormat= new SimpleDateFormat("yyyMMddHHmmss");
+			String currentTime=simpleDateFormat.format(date);
+			
+			return currentTime;
+		}
 		public static String getNowDateTime(){
 			Date date =new Date();
 			SimpleDateFormat simpleDateFormat= new SimpleDateFormat("yyyMMdd");

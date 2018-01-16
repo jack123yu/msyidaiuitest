@@ -93,7 +93,7 @@ public class BonusReturnTest extends TestBase {
 				.repayLoan(LoanInput.loanId);
 		bonusReturn.bonusReturn(LoanInput.loanId);
 		assertion.assertEquals(bonusReturn.getBonusReturnReslut().contains("奖金发放成功"), true);
-
+        
 	}
 
 	@DataProvider(name = "personLoanBonusReturnTestData")

@@ -11,12 +11,14 @@ import com.msyidai.tool.GetDataTime;
 import com.msyidai.tool.GetLoan;
 import com.mysql.fabric.xmlrpc.base.Data;
 
+import bsh.This;
+
 public class LoanInput extends BasePage {
 	public static String loanId;
 	/*
 	 * 共有元素
 	 */
-	public String resultLoanInput;
+	private String resultLoanInput;
 	@FindBy(linkText = "交易管理")
 	private WebElement transmenageElement;
 	@FindBy(linkText = "标的录入")
@@ -132,6 +134,9 @@ public class LoanInput extends BasePage {
 	private WebElement foreignFinancial;
 	// private Logger logger=Logger.getLogger(LoanInput.class);
 
+	public  String getResult() {
+		return this.resultLoanInput;
+	}
 	public FirstCheck companyLoanInput(String assetId, String amount, String rate, String transType) {
 
 		local.clickleftmenu(transmenageElement, loanInput);

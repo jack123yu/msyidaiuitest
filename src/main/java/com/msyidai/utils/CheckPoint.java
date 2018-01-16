@@ -8,22 +8,47 @@ import org.testng.asserts.Assertion;
 import org.testng.asserts.IAssert;
 import org.testng.collections.Lists;
 
-public class CheckPoint extends Assertion{
-	private Logger logger=Logger.getLogger(CheckPoint.class);
-	public static void asserttrue(String actual ,String expected) {
-		Assert.assertEquals(actual, expected);
-	}
-	
+public class CheckPoint extends Assertion {
+	private int flag = 0;
+	private Logger logger = Logger.getLogger(CheckPoint.class);
 
-	@Override
-	public void  onAssertSuccess(IAssert assertCommand) {
-		System.out.println(assertCommand.getActual());
-		logger.info(assertCommand.getActual());
-		logger.info(assertCommand.getExpected());
-		logger.info(assertCommand.getClass());
-		logger.info(assertCommand.getMessage());
-		
+	public void equals(String actual, String expected, String message) {
+		try {
+			assertEquals(actual, expected, message);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			flag++;
+			logger.error(e.getMessage());
+		}
 	}
-	
+
+	public void equals(String actual, String expected) {
+		try {
+			assertEquals(actual, expected);
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			flag++;
+			logger.error(e.getMessage());
+		}
+	}
+	public void equals( boolean actual,  boolean expected,  String message) {
+		try {
+			assertEquals(actual, expected, message);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			flag++;
+			logger.error(e.getMessage());
+		}
+	}
+	public void equals( boolean actual,  boolean expected) {
+		try {
+			assertEquals(actual, expected);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			flag++;
+			logger.error(e.getMessage());
+		}
+	}
 
 }

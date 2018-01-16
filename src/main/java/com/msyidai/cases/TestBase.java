@@ -8,6 +8,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.Assertion;
+import org.testng.asserts.SoftAssert;
 
 import bsh.This;
 
@@ -18,6 +19,7 @@ import com.msyidai.utils.locater;
 public class TestBase {
 	public  static WebDriver driver;
 	protected Assertion assertion=new Assertion();
+	protected SoftAssert asert=new SoftAssert();
 	protected static locater local=null;
 	protected Logger logger=Logger.getLogger(This.class);
 	

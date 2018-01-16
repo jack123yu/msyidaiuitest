@@ -22,13 +22,13 @@ public class FileTool {
 		createFolder(path);
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
-			
-			FileUtils.copyFile(file, new File(path+"\\"+name+"_"+GetDataTime.getCurrentTime()+".jpg"));
+			logger.info(path+"\\"+name+"_"+GetDataTime.getCurrentFileTime()+".jpg");
+			FileUtils.copyFile(file, new File(path+"\\"+name+"_"+GetDataTime.getCurrentFileTime()+".jpg"));
 		
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			System.out.println("["+GetDataTime.getCurrentTime()+"]    "+"截屏文件操作异常: "+e.getMessage());
-			logger.error("截屏文件操作异常:", e);
+			
+			logger.error(e.getMessage());
 		}
 
 	}
