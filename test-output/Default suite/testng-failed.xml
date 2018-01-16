@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.msyidai.cases.PersonLoanInput">
+      <class name="com.msyidai.cases.BonusReturnTest">
         <methods>
+          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="personLoanInput"/>
+          <include name="companyLoanBonusReturnTest" invocation-numbers="0"/>
+          <include name="personLoanBonusReturnTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.msyidai.cases.PersonLoanInput -->
+      </class> <!-- com.msyidai.cases.BonusReturnTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

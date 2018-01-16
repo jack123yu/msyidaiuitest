@@ -8,7 +8,7 @@ import com.msyidai.actions.FrontLogin;
 import com.msyidai.actions.LoanInput;
 
 public class CompanyLoanInputRepay extends TestBase{
-	@Test(dataProvider="providerNumbers")
+	@Test(dataProvider="providerNumbers",description="企业标的还款测试")
 	public void  companyLoanInputRepay(String assetId, String amount,String rate,String transType) {
 		BackLogin backLogin=new BackLogin();
 		backLogin.backLogin("admin", "password").loanInput.companyLoanInput(assetId, amount, rate, transType)

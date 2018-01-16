@@ -27,20 +27,26 @@ public class Releaseloan extends BasePage {
 	private WebElement releaseOK;
 	//满标列表标的名称按钮
 	private WebElement loanTitlElement;
-	private void setLoanTitleElement(){
-		loanTitlElement=driver.findElement(By.xpath("//lable[@id='lbl1']//td[@class='table_box']/a[text()='"+GetLoan.getLoanTitle(LoanInput.loanId)+"']"));
+	private void setLoanTitleElement(String loanid){
+		loanTitlElement=driver.findElement(By.xpath("//lable[@id='lbl1']//td[@class='table_box']/a[text()='"+GetLoan.getLoanTitle(loanid)+"']"));
 	}
-	public  Repaymentpayed  releaseLoan(String loanid)  {
+	public  Repaymentpayed  releaseLoan(String loanId)  {
 		local.clickleftmenu(transmenageElement, releaseloan);
-		setLoanTitleElement();
+		setLoanTitleElement(loanId);
 		loanTitlElement.click();
 		establish.click();
 		local.acceptAlert();
-		local.acceptAlert();
+		try {
+			logger.info(local.getAlertText());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			
+		}
+		local.wait(1);
 		if (local.IsexistWelement(releasePrepare)) {
-			logger.info("标的"+loanId+": 标的成功成功");
+			logger.info("标的"+loanId+": 标的成立成功");
 			releasePrepare.click();
-			local.wait(1);
+			local.wait(2);
 			/*
 			 * tiString未点击放款准备的弹框提示
 			 */

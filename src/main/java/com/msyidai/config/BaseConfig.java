@@ -10,7 +10,7 @@ public class BaseConfig {
 	public static int retryMaxCount=3;
 	
 	public static String IP="http://172.30.1.108:9080";
-    public static String url = "jdbc:mysql://172.30.1.74/zkbc"; 
+    public static String url = "jdbc:mysql://172.30.1.74/zkbc_zj"; 
 	public static String user = "root";
    // public static String password = "msds007";
 	public static String password = "root";//74库的密码

@@ -259,6 +259,7 @@ public class DataSeek {
 					 PreparedStatement psmt;
 					try {
 						psmt = con.prepareStatement(sql);
+					
 						 psmt.execute(); 
 					} catch (SQLException e) {
 						// TODO Auto-generated catch block

@@ -34,8 +34,15 @@ public class BonusReturn extends BasePage{
 		loanIdButton.click();
 		prepareButton.click();
 		logger.info(local.getAlertText());
+		local.acceptAlert();
+		setloanIdButton(loanId);
+		loanIdButton.click();
 		repayButton.click();
+		local.wait(1);
 		logger.info(local.getAlertText());
+		reslut=resultElement.getText();
+		logger.info(reslut);
+		
 		
 		
 	}

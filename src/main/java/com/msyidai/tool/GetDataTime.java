@@ -35,7 +35,7 @@ public class GetDataTime {
 		
 		public static String getCurrentTime(){
 			Date date =new Date();
-			SimpleDateFormat simpleDateFormat= new SimpleDateFormat("yyyMMddHHmmss");
+			SimpleDateFormat simpleDateFormat= new SimpleDateFormat("yyy-MM-dd HH:mm:ss");
 			String currentTime=simpleDateFormat.format(date);
 			
 			return currentTime;

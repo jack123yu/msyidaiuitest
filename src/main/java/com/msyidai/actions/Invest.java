@@ -33,7 +33,21 @@ public class Invest extends BasePage{
 	public WebElement errorMenage;
 	@FindBy(xpath="//h2")
 	private WebElement successElement;
-	
+	/*
+	 * h5投资元素
+	 */
+	@FindBy(xpath="//div[@ng-click='doInvest(loanDetail)']")
+	private WebElement doInvest;
+	@FindBy(xpath="//input[@ng-model='investAmount']")
+	private WebElement h5investAmount;
+	@FindBy(xpath="//button[@ng-click='btnNext()']")
+	private WebElement btnNext;
+	@FindBy(xpath="//input[@type='password']")
+	private WebElement h5PayPassword;
+	@FindBy(xpath="//button[@type='submit']")
+	private WebElement submitbutton;
+	@FindBy(xpath="//div[@class='success-logo']/div")
+	private WebElement result;
 
 	public  FrontHomePage  investLoan(String amount,String loanId,String password) {
 		
@@ -84,7 +98,17 @@ public class Invest extends BasePage{
 			investAmount.click();
 			return new FrontHomePage();
 		} 
-		
+		public ShakeAwards h5Invest(String loanId,String amount,String password) {
+		    local.to("http://h5.msyidai.com/h5/investment/details?loanId="+loanId);
+		    doInvest.click();
+		    h5investAmount.sendKeys(amount);
+		    local.wait(1);
+		    btnNext.click();
+		    h5PayPassword.sendKeys(password);
+		    submitbutton.click();
+		    logger.info( result.getText());
+		    return new ShakeAwards();
+		}
 
 
 

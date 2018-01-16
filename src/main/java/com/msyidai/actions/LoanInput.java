@@ -6,7 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
+import com.msyidai.tool.DataSeek;
+import com.msyidai.tool.GetDataTime;
 import com.msyidai.tool.GetLoan;
+import com.mysql.fabric.xmlrpc.base.Data;
 
 public class LoanInput extends BasePage {
 	public static String loanId;
@@ -122,7 +125,11 @@ public class LoanInput extends BasePage {
 	private WebElement files3;
 	@FindBy(xpath="//div[@id='fileupload3']//button[@type='submit']")
 	private WebElement submitFile3;
-	
+	/*
+	 * 出国金融标的元素
+	 */
+	@FindBy(linkText = "出国金融")
+	private WebElement foreignFinancial;
 	// private Logger logger=Logger.getLogger(LoanInput.class);
 
 	public FirstCheck companyLoanInput(String assetId, String amount, String rate, String transType) {
@@ -209,6 +216,58 @@ public class LoanInput extends BasePage {
 		save.click();
 		resultLoanInput=local.getAlertText();
 		logger.info(resultLoanInput);
+		loanId = GetLoan.getLoanId();
+		local.defaultframe();
+		DataSeek.updateParameter("UPDATE  loan set  openTime='"+GetDataTime.getCurrentTime()+"' WHERE loanId="+loanId);
+		return new FirstCheck();
+	}
+	public FirstCheck financialLoanInput(String assetId, String amount, String rate) {
+
+		local.clickleftmenu(transmenageElement, loanInput);
+		foreignFinancial.click();
+		assetsId.sendKeys(assetId);
+		loanOrderIndex.sendKeys("12222");
+		loanTitle.sendKeys("出国金融标的");
+		loanAmount.sendKeys(amount);
+		termCount.sendKeys("30");
+		loanRate.sendKeys(rate);
+		paymentfactor.sendKeys("出国金融标测试");
+		agencybank.sendKeys("测试测试");
+		description.sendKeys("出国金融融资标的借款描述");
+		local.select(tempId, "测试模板1");
+		loanstatement.sendKeys("出国金额项目描述");
+		nextStep.click();
+		idCardNo.sendKeys("411023199106041015");
+		realName.sendKeys("卢继超");
+		mobile.sendKeys("15637707077");
+		birth.sendKeys("1991-08-07");
+		CloseButton.click();
+		js.executeScript("document.getElementById('per_homeTown').removeAttribute('readonly')");
+		homeTown.sendKeys("北京市");
+		js.executeScript("document.getElementById('per_residence').removeAttribute('readonly')");
+		residence.sendKeys("北京市");
+		accountOpeningBank.sendKeys("中国");
+		local.wait(1);
+		resultBankNameGr.click();
+		accountName.sendKeys("卢继超");
+		accountNo.sendKeys("6226220506989926");
+		nextStep.click();
+		nextStep.click();
+		position.sendKeys("总统");
+		local.select(monthlyIncome, "50000元以上");
+		js.executeScript("document.getElementById('per_work').removeAttribute('readonly')");
+		work.sendKeys("北京市");
+		local.select(companyIndustry, "政府机关");
+		local.select(companyScopey, "500人以上");
+		local.select(companyWorkYears, "5年以上");
+		nextStep.click();
+		nextStep.click();
+		
+		save.click();
+		resultLoanInput=local.getAlertText();
+		logger.info(resultLoanInput);
+		local.defaultframe();
+		loanId = GetLoan.getLoanId();
 		return new FirstCheck();
 	}
 

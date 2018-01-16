@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19638" started-at="2018-01-15T04:56:51Z" finished-at="2018-01-15T04:57:10Z">
+  <suite name="Default suite" duration-ms="192441" started-at="2018-01-16T06:47:05Z" finished-at="2018-01-16T06:50:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19638" started-at="2018-01-15T04:56:51Z" finished-at="2018-01-15T04:57:10Z">
-      <class name="com.msyidai.cases.PersonLoanInput">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.msyidai.cases.PersonLoanInput@16219fe]" name="setup" is-config="true" duration-ms="3665" started-at="2018-01-15T12:56:47Z" finished-at="2018-01-15T12:56:51Z">
+    <test name="Default test" duration-ms="192441" started-at="2018-01-16T06:47:05Z" finished-at="2018-01-16T06:50:17Z">
+      <class name="com.msyidai.cases.BonusReturnTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.msyidai.cases.BonusReturnTest@fabf06]" name="setup" is-config="true" duration-ms="3904" started-at="2018-01-16T14:47:01Z" finished-at="2018-01-16T14:47:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="personLoanInput()[pri:0, instance:com.msyidai.cases.PersonLoanInput@16219fe]" name="personLoanInput" duration-ms="19449" started-at="2018-01-15T12:56:51Z" finished-at="2018-01-15T12:57:10Z">
+        <test-method status="PASS" signature="companyLoanBonusReturnTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.msyidai.cases.BonusReturnTest@fabf06]" name="companyLoanBonusReturnTest" duration-ms="99090" started-at="2018-01-16T14:47:05Z" data-provider="companyLoanBonusReturnTestData" finished-at="2018-01-16T14:48:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ZC_20180115_175832]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[转让]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- personLoanInput -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.msyidai.cases.PersonLoanInput@16219fe]" name="tearDown" is-config="true" duration-ms="4859" started-at="2018-01-15T12:57:11Z" finished-at="2018-01-15T12:57:15Z">
+        </test-method> <!-- companyLoanBonusReturnTest -->
+        <test-method status="PASS" signature="personLoanBonusReturnTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.msyidai.cases.BonusReturnTest@fabf06]" name="personLoanBonusReturnTest" duration-ms="93132" started-at="2018-01-16T14:48:44Z" data-provider="personLoanBonusReturnTestData" finished-at="2018-01-16T14:50:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ZC_20180115_175832]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personLoanBonusReturnTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.msyidai.cases.BonusReturnTest@fabf06]" name="tearDown" is-config="true" duration-ms="1901" started-at="2018-01-16T14:50:18Z" finished-at="2018-01-16T14:50:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.msyidai.cases.PersonLoanInput -->
+      </class> <!-- com.msyidai.cases.BonusReturnTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
