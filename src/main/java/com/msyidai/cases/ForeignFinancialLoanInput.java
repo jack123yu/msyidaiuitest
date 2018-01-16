@@ -17,11 +17,11 @@ public class ForeignFinancialLoanInput extends TestBase {
 		asert.assertEquals(loanInput.getResult().contains("成功"), "成功");
 		asert.assertAll();
 	}
-    @DataProvider(name="foreignLoanInPutTestData")
+   /* @DataProvider(name="foreignLoanInPutTestData")
 	public Object[][] foreignLoanInPutTestData() {
 		return new Object[][]{
 			                  { "ZC_20180115_175832", "5000", "12"}
 		};
 		
-	}
+	}*/
 }

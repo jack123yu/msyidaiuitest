@@ -15,12 +15,12 @@ public class PersonLoanInputTest extends TestBase {
 		LoanInput loanInput=new LoanInput();
 		backLogin.backLogin("admin", "password").loanInput.personLoanInput(assetId, amount, rate);
 		asert.assertEquals(loanInput.getResult().contains("成功"), "成功");
-		asert.assertAll();
+	
 	}
-
+/*
 	@DataProvider(name = "foreignLoanInPutTestData")
 	public Object[][] foreignLoanInPutTestData() {
 		return new Object[][] { { "ZC_20180115_175832", "5000", "12" } };
 
-	}
+	}*/
 }

@@ -5,7 +5,7 @@
 		<listener class-name="com.msyidai.utils.Mylistener" />
 	</listeners>
 	<parameters>
-		<parameter name="CompanyLoanassetId" value="ZC_20171213_173100" />
+		<parameter name="CompanyLoanassetId" value="ZC_20180115_175832" />
 		<parameter name="CompanyLoanamount" value="5000" />
 		<parameter name="CompanyLoanrate" value="12" />
 		<parameter name="CompanyLoantransType" value="转让" />
@@ -20,7 +20,7 @@
 
 	<test name="企业标的录取测试">
 		<classes>
-			<class name="com.msyidai.cases.CompanyLoanInputRepay">
+			<class name="com.msyidai.cases.CompanyLoanInput">
 			</class>
 		</classes>
 	</test>

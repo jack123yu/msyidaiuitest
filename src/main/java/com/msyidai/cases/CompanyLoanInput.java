@@ -14,12 +14,12 @@ public class CompanyLoanInput extends TestBase{
 		BackLogin backLogin=new BackLogin();
 		LoanInput loanInput=new LoanInput();
 	    backLogin.backLogin("admin", "password").loanInput.companyLoanInput(assetId, amount, rate, transType);
-	    asert.assertEquals(loanInput.getResult().contains("成功"), "成功");
-	    asert.assertAll();
+	    asert.assertEquals(loanInput.getResult().contains("成功"), "失败");
+	    
 	}
-	@DataProvider(name="providerNumbers")
+	/*@DataProvider(name="providerNumbers")
 	public Object[][] providerNumbers(){
 		return new Object[][]{{"ZC_20171213_173100","5000","12","转让"}
 		};
-	}
+	}*/
 }
