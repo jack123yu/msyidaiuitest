@@ -12,9 +12,9 @@ public class ForeignFinancialLoanInput extends TestBase {
 	@Parameters({"foreignLoanassetId","foreignLoanamount","foreignLoanrate"})
 	public void foreignFinancialLoanInput(String assetId, String amount, String rate) {
 		BackLogin backLogin=new BackLogin();
-		LoanInput loanInput=new LoanInput();
+		
 		backLogin.backLogin("admin", "password").loanInput.financialLoanInput(assetId, amount, rate);
-		asert.assertEquals(loanInput.getResult().contains("成功"), "成功");
+		 asert.assertEquals(LoanInput.getResult().contains("成功"), true);
 		asert.assertAll();
 	}
    /* @DataProvider(name="foreignLoanInPutTestData")

@@ -12,9 +12,9 @@ public class PersonLoanInputTest extends TestBase {
 	@Parameters({"personLoanassetId","personLoanamount","personLoanrate"})
 	public void personLoanInputTest(String assetId, String amount, String rate) {
 		BackLogin backLogin = new BackLogin();
-		LoanInput loanInput=new LoanInput();
+		
 		backLogin.backLogin("admin", "password").loanInput.personLoanInput(assetId, amount, rate);
-		asert.assertEquals(loanInput.getResult().contains("成功"), "成功");
+		 asert.assertEquals(LoanInput.getResult().contains("成功"), true);
 	
 	}
 /*

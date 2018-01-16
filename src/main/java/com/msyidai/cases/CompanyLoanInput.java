@@ -12,9 +12,9 @@ public class CompanyLoanInput extends TestBase{
 	@Parameters({"CompanyLoanassetId","CompanyLoanamount","CompanyLoanrate","CompanyLoantransType"})
 	public void  companyLoanInputTest(String assetId, String amount,String rate,String transType) {
 		BackLogin backLogin=new BackLogin();
-		LoanInput loanInput=new LoanInput();
+		
 	    backLogin.backLogin("admin", "password").loanInput.companyLoanInput(assetId, amount, rate, transType);
-	    asert.assertEquals(loanInput.getResult().contains("成功"), "失败");
+	    asert.assertEquals(LoanInput.getResult().contains("成功"), false);
 	    
 	}
 	/*@DataProvider(name="providerNumbers")

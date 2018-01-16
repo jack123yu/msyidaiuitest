@@ -18,7 +18,7 @@ public class LoanInput extends BasePage {
 	/*
 	 * 共有元素
 	 */
-	private String resultLoanInput;
+	private static String resultLoanInput;
 	@FindBy(linkText = "交易管理")
 	private WebElement transmenageElement;
 	@FindBy(linkText = "标的录入")
@@ -134,8 +134,8 @@ public class LoanInput extends BasePage {
 	private WebElement foreignFinancial;
 	// private Logger logger=Logger.getLogger(LoanInput.class);
 
-	public  String getResult() {
-		return this.resultLoanInput;
+	public static String getResult() {
+		return resultLoanInput;
 	}
 	public FirstCheck companyLoanInput(String assetId, String amount, String rate, String transType) {
 
