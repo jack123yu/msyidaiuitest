@@ -26,7 +26,7 @@
 	</test>
 	<test name="个人标的录取测试">
 		<classes>
-			<class name="com.msyidai.cases.ersonLoanInputTest">
+			<class name="com.msyidai.cases.PersonLoanInputTest">
 			</class>
 		</classes>
 	</test>
