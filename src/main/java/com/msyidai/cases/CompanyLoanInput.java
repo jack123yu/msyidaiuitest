@@ -14,7 +14,8 @@ public class CompanyLoanInput extends TestBase{
 		BackLogin backLogin=new BackLogin();
 		LoanInput loanInput=new LoanInput();
 	    backLogin.backLogin("admin", "password").loanInput.companyLoanInput(assetId, amount, rate, transType);
-		assertion.assertEquals(loanInput.getResult().contains("成功"), "成功");
+	    asert.assertEquals(loanInput.getResult().contains("成功"), "成功");
+	    asert.assertAll();
 	}
 	@DataProvider(name="providerNumbers")
 	public Object[][] providerNumbers(){

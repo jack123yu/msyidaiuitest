@@ -9,10 +9,10 @@
 		<parameter name="CompanyLoanamount" value="5000" />
 		<parameter name="CompanyLoanrate" value="12" />
 		<parameter name="CompanyLoantransType" value="转让" />
-		<parameter name="personLoanassetId" value="ZC_20171213_173100" />
+		<parameter name="personLoanassetId" value="ZC_20180115_175832" />
 		<parameter name="personLoanamount" value="5000" />
 		<parameter name="personLoanrate" value="12" />
-		<parameter name="foreignLoanassetId" value="ZC_20171213_173100" />
+		<parameter name="foreignLoanassetId" value="ZC_20180115_175832" />
 		<parameter name="foreignLoanamount" value="1000" />
 		<parameter name="foreignLoanrate" value="12" />
 

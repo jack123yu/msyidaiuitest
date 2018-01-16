@@ -14,7 +14,8 @@ public class ForeignFinancialLoanInput extends TestBase {
 		BackLogin backLogin=new BackLogin();
 		LoanInput loanInput=new LoanInput();
 		backLogin.backLogin("admin", "password").loanInput.financialLoanInput(assetId, amount, rate);
-		assertion.assertEquals(loanInput.getResult().contains("成功"), "成功");
+		asert.assertEquals(loanInput.getResult().contains("成功"), "成功");
+		asert.assertAll();
 	}
     @DataProvider(name="foreignLoanInPutTestData")
 	public Object[][] foreignLoanInPutTestData() {
