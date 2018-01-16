@@ -2,4 +2,16 @@
 <!-- 环境配置 -->
 <configs>
 
+	<driverType>chrome</driverType>
+	<driverPath>E:\\peizhichajian\\chromedriver.exe</driverPath>
+	<screenshotsPath>./image/"+GetDataTime.getNowDateTime()
+	</screenshotsPath>
+	<retryMaxCount>3</retryMaxCount>
+	<IP>http://172.30.1.108:9080</IP>
+	<url>jdbc:mysql://172.30.1.74/zkbc_zj</url>
+	<user>root</user>
+	<password>msds007</password>
+	<password>root</password>
+	//74库的密码
+
 </configs>

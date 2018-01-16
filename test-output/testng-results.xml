@@ -1,212 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="3" passed="0">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
-    <line>
-      <![CDATA[用例： 正常登陆测试   执行失败  进行第2次重试！]]>
-    </line>
-    <line>
-      <![CDATA[用例： 正常登陆测试   执行失败  进行第3次重试！]]>
-    </line>
-    <line>
-      <![CDATA[用例： 密码错误测试   执行失败  进行第2次重试！]]>
-    </line>
-    <line>
-      <![CDATA[用例： 密码错误测试   执行失败  进行第3次重试！]]>
-    </line>
-    <line>
-      <![CDATA[用例： 账户错误测试   执行失败  进行第2次重试！]]>
-    </line>
-    <line>
-      <![CDATA[用例： 账户错误测试   执行失败  进行第3次重试！]]>
-    </line>
   </reporter-output>
-  <suite name="易贷自动化测试" duration-ms="28914" started-at="2018-01-16T08:08:33Z" finished-at="2018-01-16T08:09:02Z">
+  <suite name="易贷自动化测试" duration-ms="49967" started-at="2018-01-16T11:23:00Z" finished-at="2018-01-16T11:23:50Z">
     <groups>
     </groups>
-    <test name="登陆页面测试 " duration-ms="28914" started-at="2018-01-16T08:08:33Z" finished-at="2018-01-16T08:09:02Z">
-      <class name="com.msyidai.cases.login">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.msyidai.cases.login@1d3e740]" name="setup" is-config="true" duration-ms="3645" started-at="2018-01-16T16:08:29Z" finished-at="2018-01-16T16:08:33Z">
+    <test name="企业标的录取测试" duration-ms="16026" started-at="2018-01-16T11:23:00Z" finished-at="2018-01-16T11:23:16Z">
+      <class name="com.msyidai.cases.CompanyLoanInput">
+        <test-method status="PASS" signature="companyLoanInputTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.msyidai.cases.CompanyLoanInput@463255]" name="companyLoanInputTest" duration-ms="15852" started-at="2018-01-16T19:23:00Z" description="企业融资标的的录入" finished-at="2018-01-16T19:23:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ZC_20180115_175832]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[转让]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- companyLoanInputTest -->
+      </class> <!-- com.msyidai.cases.CompanyLoanInput -->
+    </test> <!-- 企业标的录取测试 -->
+    <test name="个人标的录取测试" duration-ms="21923" started-at="2018-01-16T11:23:16Z" finished-at="2018-01-16T11:23:38Z">
+      <class name="com.msyidai.cases.PersonLoanInputTest">
+        <test-method status="PASS" signature="personLoanInputTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.msyidai.cases.PersonLoanInputTest@1a41088]" name="personLoanInputTest" duration-ms="21840" started-at="2018-01-16T19:23:16Z" description="个人标的还款测试" finished-at="2018-01-16T19:23:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ZC_20180115_175832]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personLoanInputTest -->
+      </class> <!-- com.msyidai.cases.PersonLoanInputTest -->
+    </test> <!-- 个人标的录取测试 -->
+    <test name="出国金融标的录取测试" duration-ms="11616" started-at="2018-01-16T11:23:38Z" finished-at="2018-01-16T11:23:50Z">
+      <class name="com.msyidai.cases.ForeignFinancialLoanInput">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.msyidai.cases.ForeignFinancialLoanInput@1063695]" name="setup" is-config="true" duration-ms="7101" started-at="2018-01-16T19:22:53Z" finished-at="2018-01-16T19:23:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="loginsucces(java.lang.String, java.lang.String)[pri:0, instance:com.msyidai.cases.login@1d3e740]" name="loginsucces" duration-ms="5369" started-at="2018-01-16T16:08:38Z" description="正常登陆测试" finished-at="2018-01-16T16:08:43Z">
+        <test-method status="PASS" signature="foreignFinancialLoanInput(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.msyidai.cases.ForeignFinancialLoanInput@1063695]" name="foreignFinancialLoanInput" duration-ms="11611" started-at="2018-01-16T19:23:38Z" description="出国金融标的的录入" finished-at="2018-01-16T19:23:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[15010736151]]>
+                <![CDATA[ZC_20180115_175832]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[a123456]]>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:288)
-	at org.testng.Assert.assertEquals(Assert.java:298)
-	at org.testng.asserts.Assertion$19.doAssert(Assertion.java:413)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:30)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:15)
-	at org.testng.asserts.Assertion.assertEquals(Assertion.java:410)
-	at com.msyidai.cases.login.loginsucces(login.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:991)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1171)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[用例： 正常登陆测试   执行失败  进行第3次重试！]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginsucces -->
-        <test-method status="FAIL" signature="loginpasswordflase(java.lang.String, java.lang.String)[pri:0, instance:com.msyidai.cases.login@1d3e740]" name="loginpasswordflase" duration-ms="2220" started-at="2018-01-16T16:08:49Z" description="密码错误测试" finished-at="2018-01-16T16:08:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[15010736151]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[a123456]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[密码错误 expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 密码错误 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:288)
-	at com.msyidai.cases.login.loginpasswordflase(login.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:991)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1171)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[用例： 密码错误测试   执行失败  进行第3次重试！]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginpasswordflase -->
-        <test-method status="FAIL" signature="loginusenameflase(java.lang.String, java.lang.String)[pri:0, instance:com.msyidai.cases.login@1d3e740]" name="loginusenameflase" duration-ms="2014" started-at="2018-01-16T16:09:00Z" description="账户错误测试" finished-at="2018-01-16T16:09:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1820147562]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[账户错误 expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 账户错误 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:288)
-	at com.msyidai.cases.login.loginusenameflase(login.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:991)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1171)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginusenameflase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.msyidai.cases.login@1d3e740]" name="tearDown" is-config="true" duration-ms="3214" started-at="2018-01-16T16:09:02Z" finished-at="2018-01-16T16:09:05Z">
+        </test-method> <!-- foreignFinancialLoanInput -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.msyidai.cases.ForeignFinancialLoanInput@1063695]" name="tearDown" is-config="true" duration-ms="2105" started-at="2018-01-16T19:23:50Z" finished-at="2018-01-16T19:23:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.msyidai.cases.login -->
-    </test> <!-- 登陆页面测试  -->
+      </class> <!-- com.msyidai.cases.ForeignFinancialLoanInput -->
+    </test> <!-- 出国金融标的录取测试 -->
   </suite> <!-- 易贷自动化测试 -->
 </testng-results>

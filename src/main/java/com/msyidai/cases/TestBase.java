@@ -25,7 +25,9 @@ public class TestBase {
 	
 	@BeforeSuite
 	public static void setup(){
-		driver=DriverFactory.createrDriver(BaseConfig.driverType,BaseConfig.driverPath);
+		System.out.println((String)BaseConfig.ConfigData.get("driverType")+(String)BaseConfig.ConfigData.get("driverPath"));
+		driver=DriverFactory.createrDriver((String)BaseConfig.ConfigData.get("driverType"),(String)BaseConfig.ConfigData.get("driverPath"));
+		
 		driver.manage().window().maximize();
 		local= new locater();
 		

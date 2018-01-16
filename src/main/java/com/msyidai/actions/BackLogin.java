@@ -21,7 +21,7 @@ public class BackLogin  extends BasePage{
 	
 	
 	public BackLogin backLogin(String username,String password) {
-		local.to(BaseConfig.IP+"/admin/loginuser.jsp");
+		local.to(BaseConfig.ConfigData.get("IP").toString()+"/admin/loginuser.jsp");
 		driver.manage().deleteAllCookies();
 		usenameElement.sendKeys(username);
 		pasdWebElement.sendKeys(password);

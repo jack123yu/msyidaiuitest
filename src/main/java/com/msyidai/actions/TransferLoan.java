@@ -53,11 +53,11 @@ public class TransferLoan extends BasePage{
 					sendElement.click();
 					local.wait(1);
 					if (!successElement.getText().contains("已发布")) {
-						FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "investTrans");
+						FileTool.getScreenshots(driver, BaseConfig.ConfigData.get("screenshotsPath").toString(), "investTrans");
 						local.wait(1);
 						local.pageUp();
-						FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "investTrans");
-						logger.error("标的"+loanId+"变现失败！！请前往目录："+BaseConfig.screenshotsPath+"  下查看");
+						FileTool.getScreenshots(driver, BaseConfig.ConfigData.get("screenshotsPath").toString(), "investTrans");
+						logger.error("标的"+loanId+"变现失败！！请前往目录："+BaseConfig.ConfigData.get("screenshotsPath").toString()+"  下查看");
 						
 					}
 					

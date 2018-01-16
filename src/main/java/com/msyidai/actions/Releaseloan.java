@@ -59,12 +59,12 @@ public class Releaseloan extends BasePage {
 				logger.info("标的"+loanId+"放款成功");
 			}else {
 				logger.error("标的"+loanId+"放款准备失败");
-				FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "放款失败");
+				FileTool.getScreenshots(driver, BaseConfig.ConfigData.get("screenshotsPath").toString(), "放款失败");
 			}
 			
 		}else {
 			logger.error("标的"+loanId+": 标的成功失败");
-			FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "标的成立失败");
+			FileTool.getScreenshots(driver, BaseConfig.ConfigData.get("screenshotsPath").toString(), "标的成立失败");
 		}
 		local.defaultframe();
 		 return new Repaymentpayed();

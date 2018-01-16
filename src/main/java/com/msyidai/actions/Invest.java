@@ -60,7 +60,7 @@ public class Invest extends BasePage{
 			sendCodeElement.click();
 			if(!errorMenage.getText().equals("")){
 				logger.error(errorMenage.getText());
-				FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "investError");
+				FileTool.getScreenshots(driver, BaseConfig.ConfigData.get("screenshotsPath").toString(), "investError");
 			}
 			inputCodeElement.clear();
 			inputCodeElement.sendKeys("111111");
@@ -77,7 +77,7 @@ public class Invest extends BasePage{
 			logger.info("标的"+loanId+successTitle);
 		}else {
 			logger.error(errorMenage.getText());
-			FileTool.getScreenshots(driver, BaseConfig.screenshotsPath, "investError");
+			FileTool.getScreenshots(driver, BaseConfig.ConfigData.get("screenshotsPath").toString(), "investError");
 			
 		}
 		return new FrontHomePage();

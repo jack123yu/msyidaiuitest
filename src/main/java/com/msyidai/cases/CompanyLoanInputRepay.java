@@ -22,8 +22,8 @@ public class CompanyLoanInputRepay extends TestBase{
 	@DataProvider(name="providerNumbers")
 	public Object[][] providerNumbers() {
 		
-		return new Object[][]{{"ZC_20171213_173100","5000","12","转让"},
-			                  {"ZC_20171213_173100","5000","12","非转让"}
+		return new Object[][]{{"ZC_20180115_175832","5000","12","转让"},
+			                  {"ZC_20180115_175832","5000","12","非转让"}
 		};
 	}
 

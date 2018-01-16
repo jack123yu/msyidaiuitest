@@ -30,7 +30,8 @@ public class DataSeek {
 			}
 			   Statement stmt = null;
 			try {
-				con = DriverManager.getConnection(BaseConfig.url,BaseConfig.user,BaseConfig.password);
+			con = DriverManager.getConnection(BaseConfig.ConfigData.get("url").toString(),
+					BaseConfig.ConfigData.get("user").toString(), BaseConfig.ConfigData.get("password").toString());
 				stmt = con.createStatement();
 			} catch (SQLException e1) {
 				// TODO Auto-generated catch block
@@ -73,8 +74,9 @@ public class DataSeek {
 			}
 			   Statement stmt =null;
 			try {
-				con = DriverManager.getConnection(BaseConfig.url,BaseConfig.user,BaseConfig.password);//调用DriverManager对象的getConnection()方法，获得一个Connection对象
-				  
+				con = DriverManager.getConnection(BaseConfig.ConfigData.get("url").toString(),
+                        BaseConfig.ConfigData.get("user").toString(),
+                        BaseConfig.ConfigData.get("password").toString());
 				   stmt = con.createStatement();
 			} catch (SQLException e1) {
 				// TODO Auto-generated catch block
@@ -134,7 +136,9 @@ public class DataSeek {
 				}
 				   try {
 					  
-					   con = DriverManager.getConnection(BaseConfig.url,BaseConfig.user,BaseConfig.password);//调用DriverManager对象的getConnection()方法，获得一个Connection对象
+					   con = DriverManager.getConnection(BaseConfig.ConfigData.get("url").toString(),
+		                          BaseConfig.ConfigData.get("user").toString(),
+		                          BaseConfig.ConfigData.get("password").toString());//调用DriverManager对象的getConnection()方法，获得一个Connection对象
 					   Statement stmt = con.createStatement(); 
 					  
 					   ResultSet rs=stmt.executeQuery(sql);
@@ -169,7 +173,9 @@ public class DataSeek {
 			}
 			Connection connection = null;
 			try {
-				connection = DriverManager.getConnection(BaseConfig.url,BaseConfig.user,BaseConfig.password);
+				connection = DriverManager.getConnection(BaseConfig.ConfigData.get("url").toString(),
+                                                         BaseConfig.ConfigData.get("user").toString(),
+                                                         BaseConfig.ConfigData.get("password").toString());
 			} catch (SQLException e) {
 				System.out.println("数据库链接失败，请确认数据库密码是否正确！");
 			}
@@ -210,8 +216,9 @@ public class DataSeek {
 			
 			
 			try {
-				connection=DriverManager.getConnection(BaseConfig.url,BaseConfig.user,BaseConfig.password);
-				connection.createStatement();
+				connection= DriverManager.getConnection(BaseConfig.ConfigData.get("url").toString(),
+                        BaseConfig.ConfigData.get("user").toString(),
+                        BaseConfig.ConfigData.get("password").toString());connection.createStatement();
 				
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
@@ -250,7 +257,9 @@ public class DataSeek {
 				}
 				
 				try {
-					con = DriverManager.getConnection(BaseConfig.url,BaseConfig.user,BaseConfig.password);
+					con = DriverManager.getConnection(BaseConfig.ConfigData.get("url").toString(),
+							                          BaseConfig.ConfigData.get("user").toString(),
+							                          BaseConfig.ConfigData.get("password").toString());
 					con.createStatement();
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block

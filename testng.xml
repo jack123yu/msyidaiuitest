@@ -36,6 +36,12 @@
 			</class>
 		</classes>
 	</test>
+	<test name="企业标的还款标的录取测试">
+		<classes>
+			<class name="com.msyidai.cases.CompanyLoanInputRepay">
+			</class>
+		</classes>
+	</test>
 	
 
 </suite>

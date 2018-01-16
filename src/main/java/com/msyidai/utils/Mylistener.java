@@ -44,7 +44,7 @@ public class Mylistener implements  ITestListener,IExecutionListener,ISuiteListe
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		logger.error("用例："+result.getMethod().getDescription()+"    测试失败  "+result.getThrowable().getMessage());
-	    FileTool.getScreenshots(TestBase.driver, BaseConfig.screenshotsPath, "screenshots");
+	    FileTool.getScreenshots(TestBase.driver, BaseConfig.ConfigData.get("screenshotsPath").toString(), "screenshots");
 	    
 	}
 

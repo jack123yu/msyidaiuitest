@@ -14,7 +14,7 @@ public class FailRetry implements IRetryAnalyzer {
 	@Override
 	public boolean retry(ITestResult result) {
 		// TODO Auto-generated method stub
-		if (count<BaseConfig.retryMaxCount) {
+		if (count<Integer.valueOf((BaseConfig.ConfigData.get("retryMaxCount").toString()))) {
 			logger.info("用例： "+result.getMethod().getDescription()+"   执行失败  进行第"+count+"次重试！");
 		    count++;
 		    Reporter.setCurrentTestResult(result);
