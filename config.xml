@@ -7,11 +7,9 @@
 	<screenshotsPath>./image/"+GetDataTime.getNowDateTime()
 	</screenshotsPath>
 	<retryMaxCount>3</retryMaxCount>
-	<IP>http://172.30.1.108:9080</IP>
-	<url>jdbc:mysql://172.30.1.74/zkbc_zj</url>
-	<user>root</user>
-	<password>msds007</password>
-	<password>root</password>
-	//74库的密码
-
+	<IP></IP>
+	<url>jdbc:mysql://数据库IP/表</url>
+	<user>账户</user>
+	<password>密码</password>
+	
 </configs>

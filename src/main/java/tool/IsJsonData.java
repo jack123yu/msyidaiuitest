@@ -1,4 +1,4 @@
-package com.msyidai.tool;
+package tool;
 
 import com.google.gson.JsonParseException;
 import com.google.gson.JsonParser;

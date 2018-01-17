@@ -1,4 +1,4 @@
-package com.msyidai.utils;
+package utils;
 
 import java.util.Iterator;
 import java.util.List;
@@ -15,9 +15,9 @@ import org.testng.asserts.IAssert;
 import org.testng.internal.IResultListener;
 import org.testng.internal.annotations.IAfterMethod;
 
-import com.msyidai.cases.TestBase;
-import com.msyidai.config.BaseConfig;
-import com.msyidai.tool.FileTool;
+import cases.TestBase;
+import config.BaseConfig;
+import tool.FileTool;
 
 
 

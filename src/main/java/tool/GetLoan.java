@@ -1,4 +1,4 @@
-package com.msyidai.tool;
+package tool;
 
 public class GetLoan {
 	public static  String getLoanId(){

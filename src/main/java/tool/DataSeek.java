@@ -1,4 +1,4 @@
-package com.msyidai.tool;
+package tool;
 /*数据查询
 
 */
@@ -12,7 +12,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.msyidai.config.BaseConfig;
+import config.BaseConfig;
 
 
 

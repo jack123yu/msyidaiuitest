@@ -1,4 +1,4 @@
-package com.msyidai.tool;
+package tool;
 
 import java.io.File;
 import java.io.IOException;

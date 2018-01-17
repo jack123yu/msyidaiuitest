@@ -1,4 +1,4 @@
-package com.msyidai.tool;
+package tool;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package com.msyidai.cases;
+package cases;
 
 
 import org.apache.log4j.Logger;
@@ -11,10 +11,9 @@ import org.testng.asserts.Assertion;
 import org.testng.asserts.SoftAssert;
 
 import bsh.This;
-
-import com.msyidai.config.BaseConfig;
-import com.msyidai.utils.DriverFactory;
-import com.msyidai.utils.locater;
+import config.BaseConfig;
+import utils.DriverFactory;
+import utils.locater;
 
 public class TestBase {
 	public  static WebDriver driver;

@@ -1,4 +1,4 @@
-package com.msyidai.utils;
+package utils;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-import com.msyidai.cases.TestBase;
+import cases.TestBase;
 
 public class locater {
 	private WebDriver driver=null;

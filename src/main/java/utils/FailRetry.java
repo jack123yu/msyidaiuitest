@@ -1,11 +1,11 @@
-package com.msyidai.utils;
+package utils;
 
 import org.apache.log4j.Logger;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import com.msyidai.config.BaseConfig;
+import config.BaseConfig;
 
 public class FailRetry implements IRetryAnalyzer {
     

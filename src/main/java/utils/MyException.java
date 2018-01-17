@@ -1,4 +1,4 @@
-package com.msyidai.utils;
+package utils;
 
 public class MyException extends RuntimeException {
 	public  MyException() {

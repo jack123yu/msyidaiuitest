@@ -1,4 +1,4 @@
-package com.msyidai.utils;
+package utils;
 /*
  * 定义了不同非浏览器
  */
